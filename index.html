@@ -1,13 +1,30 @@
 <!doctype html>
 <html lang="zh-Hant">
   <head>
+    <!-- 基本設定 -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Okinawa Trip</title>
+
+    <!-- 主題色（影響 Safari 上方顏色） -->
     <meta name="theme-color" content="#F7F4EB" />
+
+    <!-- PWA / iOS 設定 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- iPhone 主畫面 Icon（最重要） -->
+    <link rel="apple-touch-icon" href="/icon.png" />
+
+    <!-- PWA Manifest（如果有） -->
+    <link rel="manifest" href="/manifest.json" />
   </head>
+
   <body>
     <div id="app"></div>
+
+    <!-- Vite / Vue 入口 -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
